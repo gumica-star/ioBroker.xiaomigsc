@@ -1,0 +1,103 @@
+{
+	"common": {
+		"name": "xiaomigsc",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "XiaomiScaleGsc",
+		"titleLang": {
+			"en": "XiaomiScaleGsc",
+			"de": "XiaomiScaleGsc",
+			"ru": "XiaomiScaleGsc",
+			"pt": "XiaomiScaleGsc",
+			"nl": "XiaomiScaleGsc",
+			"fr": "XiaomiScaleGsc",
+			"it": "XiaomiScaleGsc",
+			"es": "XiaomiScaleGsc",
+			"pl": "XiaomiScaleGsc",
+			"zh-cn": "XiaomiScaleGsc"
+		},
+		"desc": {
+			"en": "xiaomigsc",
+			"de": "xiaomigsc",
+			"ru": "xiaomigsc",
+			"pt": "xiaomigsc",
+			"nl": "xiaomigsc",
+			"fr": "xiaomigsc",
+			"it": "xiaomigsc",
+			"es": "xiaomigsc",
+			"pl": "xiaomigsc",
+			"zh-cn": "xiaomigsc"
+		},
+		"authors": ["gumica-star <gumica-star@wir-schmidt.de>"],
+		"keywords": ["ioBroker", "template", "Smart Home", "home automation"],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "xiaomigsc.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/gumica-star/ioBroker.xiaomigsc/main/admin/xiaomigsc.png",
+		"readme": "https://github.com/gumica-star/ioBroker.xiaomigsc/blob/main/README.md",
+		"loglevel": "info",
+		"restartAdapters": ["vis"],
+		"mode": "daemon",
+		"type": "visualization-widgets",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "push",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			},
+			"vis"
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"mqttDatenpunkt": "mqtt.0.home.OpenMQTTGateway_ESP32_BLE.BTtoMQTT.B4565D8A684E",
+		"gebJahr": "1971"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}

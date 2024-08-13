@@ -1,0 +1,43 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "xiaomigsc",
+	"title": "XiaomiScaleGsc",
+	"keywords": "",
+	"contributors": "",
+	"features": ["adapter", "vis"],
+	"adminFeatures": [],
+	"type": "visualization-widgets",
+	"startMode": "daemon",
+	"connectionType": "local",
+	"dataSource": "push",
+	"connectionIndicator": "yes",
+	"adapterSettings": [
+		{
+			"key": "mqttDatenpunkt",
+			"inputType": "text",
+			"defaultValue": "mqtt.0.home.OpenMQTTGateway_ESP32_BLE.BTtoMQTT.B4565D8A684E"
+		},
+		{
+			"key": "gebJahr",
+			"inputType": "number",
+			"defaultValue": "1971"
+		}
+	],
+	"language": "JavaScript",
+	"nodeVersion": "14",
+	"adminUi": "json",
+	"releaseScript": "yes",
+	"indentation": "Tab",
+	"quotes": "double",
+	"es6class": "no",
+	"tools": ["ESLint", "type checking", "Prettier", "devcontainer"],
+	"authorName": "gumica-star",
+	"authorGithub": "gumica-star",
+	"authorEmail": "gumica-star@wir-schmidt.de",
+	"gitRemoteProtocol": "HTTPS",
+	"license": "MIT License",
+	"dependabot": "yes",
+	"target": "github",
+	"creatorVersion": "2.3.0"
+}

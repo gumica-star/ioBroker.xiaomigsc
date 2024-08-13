@@ -1,0 +1,16 @@
+{
+	"i18n": true,
+	"type": "panel",
+	"items": {
+		"mqttDatenpunkt": {
+			"type": "text",
+			"label": "mqttDatenpunkt",
+			"newLine": true
+		},
+		"gebJahr": {
+			"type": "number",
+			"label": "gebJahr",
+			"newLine": true
+		}
+	}
+}
